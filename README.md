@@ -1,5 +1,12 @@
 # Tyba Backend Engineer Test
 
+# Ejecución
+
+    npm install or yarn install
+    docker-compose up -d
+    npm run migrate or yarn migrate
+    npm run dev or yarn dev
+
 # Endpoints
 
 ## Registro de usuario
@@ -56,7 +63,13 @@ Requiere token de tipo Bearer
 
     {
       "message": "Ok!",
-      "apiKeyToken": "..."
+      "data": [
+        {
+          "name": "...",
+          "rating": 1,
+          "vicinity": "..."
+	      }
+      ]
     }
 
 ## Restaurantes cercanos por coordenadas \*Post-login
@@ -77,7 +90,13 @@ Requiere token de tipo Bearer
 
     {
       "message": "Ok!",
-      "apiKeyToken": "..."
+      "data": [
+        {
+          "name": "...",
+          "rating": 1,
+          "vicinity": "..."
+	      }
+      ]
     }
 
 ## Historico de transacciones \*Post-login

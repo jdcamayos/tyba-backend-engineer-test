@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon --exec node src/index.js",
+    "migrate": "prisma migrate dev",
     "start": "node src/index.js",
     "test": "jest"
   },
